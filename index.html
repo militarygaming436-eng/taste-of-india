@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+
+
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+
+
+<!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+<!-- NAVBAR SECTION -->
+<header class="site-header">
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/taste.png" alt="Taste of India Logo">
+                <span class="logo-text">Taste of India</span>
+            </a>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Service.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA Button -->
+        <div class="nav-cta">
+            <a href="Order.html">
+                <i class="fas fa-shopping-cart"></i>
+                Order Now
+            </a>
+        </div>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Service.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-cta">
+            <a href="Order.html">
+                <i class="fas fa-shopping-cart"></i>
+                Order Now
+            </a>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- ===== HERO SECTION ===== -->
+<section id="hero">
+
+    <!-- HERO TEXT -->
+    <div class="hero-content">
+        <h1>Authentic & Premium Indian Food</h1>
+        
+        <p class="tagline">
+            Experience the true essence of India with our traditional recipes,
+            handpicked spices, and freshly prepared meals.
+        </p>
+        
+        <div class="hero-features">
+            <div class="feature">
+                <i class="fas fa-seedling"></i>
+                <span>Fresh Ingredients</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-mortar-pestle"></i>
+                <span>Traditional Recipes</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-fire-alt"></i>
+                <span>Clay Oven Cooking</span>
+            </div>
+        </div>
+        
+        <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">
+                <i class="fas fa-utensils"></i> View Menu
+            </a>
+            <a href="#order" class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i> Order Now
+            </a>
+            <a href="#reservation" class="btn btn-outline">
+                <i class="fas fa-calendar-alt"></i> Book a Table
+            </a>
+        </div>
+    </div>
+
+    <!-- HERO IMAGE WITH SLIDER -->
+    <div class="hero-image-container">
+        <div class="slider-container">
+            <div class="slider" id="heroSlider">
+                <div class="slide active">
+                  <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chicken Biryani">
+                    <div class="slide-caption">
+                        <h3>Royal Thali</h3>
+                        <p>A complete meal with 8 different dishes</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Butter Chicken">
+                    <div class="slide-caption">
+                        <h3>Butter Chicken</h3>
+                        <p>Creamy tomato curry with tender chicken</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Biryani">
+                    <div class="slide-caption">
+                        <h3>Hyderabadi Biryani</h3>
+                        <p>Aromatic rice with marinated meat and spices</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Paneer Tikka">
+                    <div class="slide-caption">
+                        <h3>Paneer Tikka</h3>
+                        <p>Grilled cottage cheese with Indian spices</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <button class="slider-control prev" id="prevSlide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-control next" id="nextSlide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Slider Dots -->
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+            </div>
+        </div>
+    
+</section>
+
+
+
+
+
+<!-- ===== ABOUT SECTION ===== -->
+<section id="about" class="about-section">
+    <!-- Background Decoration -->
+    <div class="about-decoration">
+        <div class="spice spice-1">🌶️</div>
+        <div class="spice spice-2">🧅</div>
+        <div class="spice spice-3">🍛</div>
+        <div class="spice spice-4">🥘</div>
+    </div>
+    
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <span class="section-subtitle">Our Story</span>
+            <h2 class="section-title">The Taste of India Legacy</h2>
+            <div class="title-underline">
+                <span></span>
+                <span class="middle"></span>
+                <span></span>
+            </div>
+            <p class="section-description">
+                For over two decades, we've been serving authentic Indian cuisine with passion and tradition
+            </p>
+        </div>
+        
+        <div class="about-content">
+            <!-- Left Column - Image -->
+            <div class="about-image">
+                <div class="image-frame">
+                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Our Chef preparing traditional Indian food" 
+                         class="main-image">
+                    <div class="image-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Best Indian Restaurant 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Experience Badge -->
+                <div class="experience-badge">
+                    <div class="experience-number">25+</div>
+                    <div class="experience-text">
+                        <span>Years of</span>
+                        <strong>Excellence</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column - Content -->
+            <div class="about-text">
+                <!-- Our Story -->
+                <div class="story-card">
+                    <div class="story-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Our Journey</h3>
+                    <p>
+                        Founded in 1998 by Master Chef Rajesh Kumar, Taste of India began as a small family restaurant 
+                        with a dream to share authentic Indian flavors with the world. Today, we're proud to be one of 
+                        the most celebrated Indian restaurants, known for our traditional recipes and warm hospitality.
+                    </p>
+                </div>
+                
+                <!-- Philosophy -->
+                <div class="story-card">
+                    <div class="story-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Our Philosophy</h3>
+                    <p>
+                        We believe food is an expression of love. Every dish is prepared with meticulous care, 
+                        using time-honored techniques passed down through generations. From sourcing the finest 
+                        spices to handcrafting each meal, we pour our heart into every aspect of your dining experience.
+                    </p>
+                </div>
+                
+                <!-- Values -->
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Fresh Ingredients</h4>
+                        <p>Daily sourced organic produce</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-mortar-pestle"></i>
+                        </div>
+                        <h4>Traditional Recipes</h4>
+                        <p>Authentic family recipes</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h4>Clay Oven Cooking</h4>
+                        <p>Traditional tandoor preparation</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                        <h4>Hygiene First</h4>
+                        <p>Highest cleanliness standards</p>
+                    </div>
+                </div>
+                
+                <!-- Stats -->
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5000">0</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label">Dishes Served</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="25">0</div>
+                        <div class="stat-label">Expert Chefs</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="about-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Book Your Table
+                    </a>
+                    <a href="#menu" class="btn btn-outline">
+                        <i class="fas fa-book-open"></i>
+                        Explore Menu
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- ===== WHY CHOOSE US SECTION ===== -->
+<section class="why-choose-us">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <span class="section-subtitle">Why Choose Us</span>
+            <h2 class="section-title">Experience The Difference</h2>
+            <div class="title-underline">
+                <span></span>
+                <span class="middle"></span>
+                <span></span>
+            </div>
+            <p class="section-description">
+                Discover what makes Taste of India the preferred choice for authentic Indian cuisine
+            </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Authentic Flavors</h3>
+                <p>Traditional recipes passed down through generations, cooked with authentic Indian spices and techniques.</p>
+                <div class="feature-badge">
+                    <span>100% Original</span>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Fresh Ingredients</h3>
+                <p>Daily sourced organic vegetables, premium quality meats, and hand-picked spices for the freshest taste.</p>
+                <div class="feature-badge">
+                    <span>Farm to Table</span>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Award Winning</h3>
+                <p>Recognized as "Best Indian Restaurant" 2023 with multiple culinary awards for excellence in traditional cuisine.</p>
+                <div class="feature-badge">
+                    <span>5+ Awards</span>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Expert Chefs</h3>
+                <p>Our master chefs have 20+ years experience, trained in traditional cooking methods from different regions of India.</p>
+                <div class="feature-badge">
+                    <span>25+ Years Exp</span>
+                </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3>Fast Delivery</h3>
+                <p>Hot meals delivered within 30 minutes. Special heat retention packaging ensures food stays fresh and hot.</p>
+                <div class="feature-badge">
+                    <span>30 Min Guarantee</span>
+                </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <h3>Customer First</h3>
+                <p>24/7 customer support, easy returns, and satisfaction guarantee. Your happiness is our priority.</p>
+                <div class="feature-badge">
+                    <span>5000+ Happy Customers</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial Slider -->
+        <div class="testimonial-section">
+            <div class="testimonial-header">
+                <h3>What Our Customers Say</h3>
+                <p>Real feedback from our valued customers</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The most authentic Indian food I've had outside India! The flavors are incredible and the service is exceptional. Highly recommended!"</p>
+                        <div class="customer-info">
+                            <div class="customer-name">Rajesh Kumar</div>
+                            <div class="customer-detail">Food Critic • 2 weeks ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"As someone from Delhi, I can vouch for the authenticity. The butter chicken and naan are exactly like back home. Absolutely delicious!"</p>
+                        <div class="customer-info">
+                            <div class="customer-name">Priya Sharma</div>
+                            <div class="customer-detail">Regular Customer • 1 month ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"Perfect for family dinners! The ambiance is lovely, food is consistently excellent, and the staff is very attentive. Our go-to Indian restaurant."</p>
+                        <div class="customer-info">
+                            <div class="customer-name">Michael Chen</div>
+                            <div class="customer-detail">Family Customer • 2 days ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Controls -->
+            <div class="testimonial-controls">
+                <button class="testimonial-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="testimonial-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="statistics-section">
+            <div class="stat-card">
+                <div class="stat-number">15,000+</div>
+                <div class="stat-label">Meals Served</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Customer Satisfaction</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Menu Items</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4.9/5</div>
+                <div class="stat-label">Average Rating</div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="why-cta">
+            <h3>Ready to Experience Authentic Indian Flavors?</h3>
+            <p>Join thousands of satisfied customers who trust us for their Indian food cravings</p>
+            <div class="cta-buttons">
+                <a href="#order" class="btn btn-primary">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                </a>
+                <a href="#menu" class="btn btn-outline">
+                    <i class="fas fa-book-open"></i>
+                    View Full Menu
+                </a>
+            </div>
+        </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <header>
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Reach out to us for reservations, events, or any questions.</p>
+  </header>
+
+  <!-- WRAPPER FOR LEFT INFO + RIGHT FORM -->
+  <div class="contact-wrapper">
+
+    <!-- LEFT SIDE : CONTACT INFORMATION -->
+    <div class="contact-info">
+      <h3>Our Location</h3>
+
+      <address>
+        <p><strong>TASTE OF INDIA</strong></p>
+        <p>123 Culinary Street</p>
+        <p>Food District, FD 10001</p>
+        <p>Phone: <a href="tel:+11234567890">(123) 456-7890</a></p>
+        <p>Email: <a href="mailto:info@tasteofindia.com">info@tasteofindia.com</a></p>
+      </address>
+
+      <h4>Opening Hours</h4>
+      <p>Monday – Thursday: 11:00 AM – 10:00 PM</p>
+      <p>Friday – Saturday: 11:00 AM – 11:00 PM</p>
+      <p>Sunday: 10:00 AM – 9:00 PM</p>
+    </div>
+
+    <!-- RIGHT SIDE : CONTACT FORM (CARD) -->
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+
+      <form action="#" method="post">
+        <p>
+          <label for="name">Full Name</label><br>
+          <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>
+          <label for="email">Email Address</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Send Message</button>
+        </p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    <!-- Restaurant Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Restaurant Information -->
+            <section class="restaurant-info">
+                <h2> TASTE OF INDIA </h2>
+                <p>Authentic Indian cuisine in the heart of the city</p>
+                <address>
+                    123 Main Street<br>
+                    Cityville, ST 12345<br>
+                    <a href="tel:+15551234567">(555) 123-4567</a><br>
+                    <a href="mailto:info@tasteofindia.com">info@tasteofindia.com</a>
+                </address>
+            </section>
+
+            <!-- Operating Hours -->
+            <section class="hours">
+                <h3>Operating Hours</h3>
+                <ul>
+                    <li>Monday - Thursday: 11:00 AM - 10:00 PM</li>
+                    <li>Friday - Saturday: 11:00 AM - 11:00 PM</li>
+                    <li>Sunday: 12:00 PM - 9:00 PM</li>
+                </ul>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="quick-links">
+                <h3>Quick Links</h3>
+                <nav>
+                    <ul>
+                        <li><a href="/menu">Menu</a></li>
+                        <li><a href="/reservations">Reservations</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/gift-cards">Gift Cards</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="newsletter">
+                <h3>Join Our Newsletter</h3>
+                <p>Receive updates on specials and events</p>
+                <form>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+
+            <!-- Social Media Links -->
+            <section class="social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://tripadvisor.com">TripAdvisor</a></li>
+                </ul>
+            </section>
+
+            <!-- Legal & Copyright -->
+            <section class="legal">
+                <hr>
+                <p>&copy; 2023 KWANG GROUP . All rights reserved.</p>
+                <nav>
+                    <ul>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service">Terms of Service</a></li>
+                        <li><a href="/accessibility">Accessibility</a></li>
+                        <li><a href="/sitemap">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </footer>
+    
+</body>
+</html>

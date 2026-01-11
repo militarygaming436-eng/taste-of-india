@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICE PAGE</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome (icons ke liye) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+
+
+        <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- NAVBAR SECTION -->
+<header class="site-header">
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/taste.png" alt="Taste of India Logo">
+                <span class="logo-text">Taste of India</span>
+            </a>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Service.html" class="active">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA Button -->
+        <div class="nav-cta">
+            <a href="#order">
+                <i class="fas fa-shopping-cart"></i>
+                Order Now
+            </a>
+        </div>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">HOME</a></li> 
+            <li><a href="About.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Service.html" class="active">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-cta">
+            <a href="Order.html">
+                <i class="fas fa-shopping-cart"></i>
+                Order Now
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- ===== SERVICES PAGE ===== -->
+<main class="services-page">
+
+  <!-- Hero Section -->
+  <section class="services-hero">
+    <div class="services-hero-content">
+      <h1>Our Services</h1>
+      <p>Delivering exceptional food and unforgettable dining experiences</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section container">
+
+    <div class="service-card">
+      <div class="service-icon">🍽️</div>
+      <h3>Dine-In Experience</h3>
+      <p>
+        Enjoy a comfortable and elegant dining atmosphere with freshly prepared
+        dishes served by our friendly staff.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🚚</div>
+      <h3>Home Delivery</h3>
+      <p>
+        Get your favorite meals delivered hot and fresh to your doorstep with
+        quick and reliable delivery service.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🥡</div>
+      <h3>Takeaway</h3>
+      <p>
+        Short on time? Order takeaway and enjoy our delicious food wherever you go.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🎉</div>
+      <h3>Event Catering</h3>
+      <p>
+        Make your events special with our customized catering services for
+        weddings, parties, and corporate events.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">👨‍🍳</div>
+      <h3>Custom Orders</h3>
+      <p>
+        Have special food preferences? We prepare customized dishes as per your
+        taste and dietary needs.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">⭐</div>
+      <h3>Premium Quality</h3>
+      <p>
+        We use fresh ingredients and authentic recipes to ensure the highest
+        quality in every meal we serve.
+      </p>
+    </div>
+
+  </section>
+
+</main>
+<!-- ===== END SERVICES PAGE ===== -->
+
+
+
+
+
+    <!-- Restaurant Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Restaurant Information -->
+            <section class="restaurant-info">
+                <h2>TASTE OF INDIA</h2>
+                <p>Authentic Indian cuisine in the heart of the city</p>
+                <address>
+                    123 Main Street<br>
+                    Cityville, ST 12345<br>
+                    <a href="tel:+15551234567">(555) 123-4567</a><br>
+                    <a href="mailto:info@tasteofindia.com">info@tasteofindia.com</a>
+                </address>
+            </section>
+
+            <!-- Operating Hours -->
+            <section class="hours">
+                <h3>Operating Hours</h3>
+                <ul>
+                    <li>Monday - Thursday: 11:00 AM - 10:00 PM</li>
+                    <li>Friday - Saturday: 11:00 AM - 11:00 PM</li>
+                    <li>Sunday: 12:00 PM - 9:00 PM</li>
+                </ul>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="quick-links">
+                <h3>Quick Links</h3>
+                <nav>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="gift-cards.html">Gift Cards</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="newsletter">
+                <h3>Join Our Newsletter</h3>
+                <p>Receive updates on specials and events</p>
+                <form id="newsletter-form">
+                    <label for="email" class="visually-hidden">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+
+            <!-- Social Media Links -->
+            <section class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tripadvisor.com" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </section>
+
+            <!-- Legal & Copyright -->
+            <section class="legal">
+                <hr>
+                <p>&copy; 2023 KWANG GROUP. ALL RIGHTS RESERVED.</p>
+                <nav>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </footer>
+

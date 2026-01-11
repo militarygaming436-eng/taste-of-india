@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page </title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome (icons ke liye) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+
+    
+        <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+
+    
+    <!-- NAVBAR SECTION -->
+    <header class="site-header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="index.html">
+                    <!-- You'll need to add your actual logo image -->
+                    <img src="images/taste.png" alt="Taste of India Logo" onerror="this.style.display='none'">
+                    <span class="logo-text">Taste of India</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+
+            <!-- Desktop CTA Button -->
+            <div class="nav-cta">
+                <a href="Order.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                </a>
+            </div>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li> 
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="mobile-cta">
+                <a href="#order">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- ===== CONTACT PAGE ===== -->
+<main class="contact-page">
+
+  <!-- Contact Hero -->
+  <section class="contact-hero">
+    <div class="contact-hero-content">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you. Get in touch with us anytime.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section container">
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <p>
+        Whether you have a question about our menu, want to book a table,
+        or need catering services — we are here to help.
+      </p>
+
+      <ul>
+        <li><strong>📍 Address:</strong> 123 Food Street, Your City, India</li>
+        <li><strong>📞 Phone:</strong> +91 98765 43210</li>
+        <li><strong>✉️ Email:</strong> info@yourrestaurant.com</li>
+        <li><strong>⏰ Opening Hours:</strong> 10:00 AM – 11:00 PM</li>
+      </ul>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="Your Phone Number">
+        </div>
+
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- Google Map -->
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps?q=india&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+</main>
+<!-- ===== END CONTACT PAGE ===== -->
+
+
+
+
+    <!-- Restaurant Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Restaurant Information -->
+            <section class="restaurant-info">
+                <h2> TASTE OF INDIA </h2>
+                <p>Authentic Indian cuisine in the heart of the city</p>
+                <address>
+                    123 Main Street<br>
+                    Cityville, ST 12345<br>
+                    <a href="tel:+15551234567">(555) 123-4567</a><br>
+                    <a href="mailto:info@tasteofindia.com">info@tasteofindia.com</a>
+                </address>
+            </section>
+
+            <!-- Operating Hours -->
+            <section class="hours">
+                <h3>Operating Hours</h3>
+                <ul>
+                    <li>Monday - Thursday: 11:00 AM - 10:00 PM</li>
+                    <li>Friday - Saturday: 11:00 AM - 11:00 PM</li>
+                    <li>Sunday: 12:00 PM - 9:00 PM</li>
+                </ul>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="quick-links">
+                <h3>Quick Links</h3>
+                <nav>
+                    <ul>
+                        <li><a href="/menu">Menu</a></li>
+                        <li><a href="/reservations">Reservations</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/gift-cards">Gift Cards</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="newsletter">
+                <h3>Join Our Newsletter</h3>
+                <p>Receive updates on specials and events</p>
+                <form>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+
+            <!-- Social Media Links -->
+            <section class="social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://tripadvisor.com">TripAdvisor</a></li>
+                </ul>
+            </section>
+
+            <!-- Legal & Copyright -->
+            <section class="legal">
+                <hr>
+                <p>&copy; 2023 KWANG GROUP . All rights reserved.</p>
+                <nav>
+                    <ul>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service">Terms of Service</a></li>
+                        <li><a href="/accessibility">Accessibility</a></li>
+                        <li><a href="/sitemap">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </footer>
+    
+</body>
+</html>

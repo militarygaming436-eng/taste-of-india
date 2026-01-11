@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of India - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+        <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+
+    
+    <!-- NAVBAR SECTION -->
+    <header class="site-header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="index.html">
+                    <!-- You'll need to add your actual logo image -->
+                    <img src="images/taste.png" alt="Taste of India Logo" onerror="this.style.display='none'">
+                    <span class="logo-text">Taste of India</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Desktop CTA Button -->
+            <div class="nav-cta">
+                <a href="Order.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                </a>
+            </div>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-cta">
+                <a href="#order">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+<section id="order-now">
+    <h1>Order Online</h1>
+    <p>Place your order for delivery or pickup</p>
+    
+    <div class="order-options">
+        <button class="order-type active" data-type="delivery">Delivery</button>
+        <button class="order-type" data-type="pickup">Pickup</button>
+    </div>
+    
+    <div id="delivery-info">
+        <h2>Delivery Address</h2>
+        <form id="address-form">
+            <div>
+                <label for="street">Street Address</label>
+                <input type="text" id="street" name="street" required>
+            </div>
+            <div>
+                <label for="apartment">Apartment/Suite</label>
+                <input type="text" id="apartment" name="apartment">
+            </div>
+            <div>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div>
+                <label for="zip">ZIP Code</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+            <div>
+                <label for="instructions">Delivery Instructions</label>
+                <textarea id="instructions" name="instructions" rows="2" placeholder="Gate code, building instructions, etc."></textarea>
+            </div>
+        </form>
+    </div>
+    
+    <div class="menu-categories">
+        <h2>Menu</h2>
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="appetizers">Appetizers</button>
+            <button class="category-tab" data-category="mains">Main Course</button>
+            <button class="category-tab" data-category="breads">Breads</button>
+            <button class="category-tab" data-category="rice">Rice & Biryani</button>
+            <button class="category-tab" data-category="desserts">Desserts</button>
+            <button class="category-tab" data-category="drinks">Drinks</button>
+        </div>
+        
+        <div id="appetizers" class="category-content active">
+            <div class="menu-item">
+                <h3>Vegetable Samosa</h3>
+                <p>Spiced potatoes and peas in crispy pastry - 2 pieces</p>
+                <div class="item-price">$5.99</div>
+                <div class="item-controls">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">0</span>
+                    <button class="quantity-btn plus">+</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Paneer Tikka</h3>
+                <p>Grilled cottage cheese cubes with spices</p>
+                <div class="item-price">$8.99</div>
+                <div class="item-controls">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">0</span>
+                    <button class="quantity-btn plus">+</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Chicken Pakora</h3>
+                <p>Chicken pieces in spiced chickpea batter</p>
+                <div class="item-price">$7.99</div>
+                <div class="item-controls">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">0</span>
+                    <button class="quantity-btn plus">+</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mains" class="category-content">
+            <div class="menu-item">
+                <h3>Butter Chicken</h3>
+                <p>Tender chicken in tomato-butter gravy</p>
+                <div class="item-price">$14.99</div>
+                <div class="spice-level">
+                    <span>Spice:</span>
+                    <select>
+                        <option>Mild</option>
+                        <option>Medium</option>
+                        <option>Hot</option>
+                    </select>
+                </div>
+                <div class="item-controls">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">0</span>
+                    <button class="quantity-btn plus">+</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Paneer Butter Masala</h3>
+                <p>Cottage cheese in creamy tomato gravy</p>
+                <div class="item-price">$13.99</div>
+                <div class="spice-level">
+                    <span>Spice:</span>
+                    <select>
+                        <option>Mild</option>
+                        <option>Medium</option>
+                        <option>Hot</option>
+                    </select>
+                </div>
+                <div class="item-controls">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">0</span>
+                    <button class="quantity-btn plus">+</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="breads" class="category-content">
+            <div class="menu-item">
+                <h3>Garlic Naan</h3>
+                <p>Leavened bread with garlic and butter</p>
+                <div class="item-price">$3.99</div>
+                <div class="item-controls">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">0</span>
+                    <button class="quantity-btn plus">+</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Butter Roti</h3>
+                <p>Whole wheat flatbread with butter</p>
+                <div class="item-price">$2.99</div>
+                <div class="item-controls">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">0</span>
+                    <button class="quantity-btn plus">+</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <aside id="order-summary">
+        <h2>Your Order</h2>
+        <div id="cart-items">
+            <p>No items added yet</p>
+        </div>
+        <div id="price-breakdown">
+            <div class="price-row">
+                <span>Subtotal:</span>
+                <span>$0.00</span>
+            </div>
+            <div class="price-row">
+                <span>Tax (8%):</span>
+                <span>$0.00</span>
+            </div>
+            <div class="price-row">
+                <span>Delivery Fee:</span>
+                <span>$3.99</span>
+            </div>
+            <div class="price-row total">
+                <span>Total:</span>
+                <span>$3.99</span>
+            </div>
+        </div>
+        <div id="special-requests">
+            <h3>Special Requests</h3>
+            <textarea placeholder="Any allergies or special instructions?"></textarea>
+        </div>
+        <button id="checkout-btn">Proceed to Checkout</button>
+        <p class="delivery-time">Estimated delivery: 45-60 minutes</p>
+    </aside>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Restaurant Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Restaurant Information -->
+            <section class="restaurant-info">
+                <h2>TASTE OF INDIA</h2>
+                <p>Authentic Indian cuisine in the heart of the city</p>
+                <address>
+                    123 Main Street<br>
+                    Cityville, ST 12345<br>
+                    <a href="tel:+15551234567">(555) 123-4567</a><br>
+                    <a href="mailto:info@tasteofindia.com">info@tasteofindia.com</a>
+                </address>
+            </section>
+
+            <!-- Operating Hours -->
+            <section class="hours">
+                <h3>Operating Hours</h3>
+                <ul>
+                    <li>Monday - Thursday: 11:00 AM - 10:00 PM</li>
+                    <li>Friday - Saturday: 11:00 AM - 11:00 PM</li>
+                    <li>Sunday: 12:00 PM - 9:00 PM</li>
+                </ul>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="quick-links">
+                <h3>Quick Links</h3>
+                <nav>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="gift-cards.html">Gift Cards</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="newsletter">
+                <h3>Join Our Newsletter</h3>
+                <p>Receive updates on specials and events</p>
+                <form id="newsletter-form">
+                    <label for="email" class="visually-hidden">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+
+            <!-- Social Media Links -->
+            <section class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tripadvisor.com" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </section>
+
+            <!-- Legal & Copyright -->
+            <section class="legal">
+                <hr>
+                <p>&copy; 2023 KWANG GROUP. ALL RIGHTS RESERVED.</p>
+                <nav>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </footer>
+

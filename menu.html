@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- NAVBAR SECTION -->
+    <header class="site-header">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/taste.png" alt="Taste of India Logo" onerror="this.style.display='none'">
+                    <span class="logo-text">Taste of India</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Desktop CTA Button -->
+            <div class="nav-cta">
+                <a href="#order">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                </a>
+            </div>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-cta">
+                <a href="Order.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    Order Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MODERN MENU PAGE ===== -->
+    <main class="menu-page container">
+        <!-- Hero Menu Banner -->
+        <section class="menu-hero">
+            <div class="menu-hero-content">
+                <h1 class="menu-hero-title">Our Exquisite Menu</h1>
+                <p class="menu-hero-subtitle">Discover authentic Indian flavors crafted with passion and tradition</p>
+                <div class="menu-hero-badges">
+                    <span class="badge"><i class="fas fa-leaf"></i> Vegetarian Options</span>
+                    <span class="badge"><i class="fas fa-pepper-hot"></i> Spice Levels</span>
+                    <span class="badge"><i class="fas fa-award"></i> Chef Recommended</span>
+                    <span class="badge"><i class="fas fa-star"></i> Best Sellers</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Navigation Tabs -->
+        <nav class="menu-category-nav">
+            <div class="category-tabs">
+                <a href="#starters" class="category-tab active">
+                    <i class="fas fa-utensils"></i>
+                    <span>Starters</span>
+                </a>
+                <a href="#main-course" class="category-tab">
+                    <i class="fas fa-fire"></i>
+                    <span>Main Course</span>
+                </a>
+                <a href="#breads" class="category-tab">
+                    <i class="fas fa-bread-slice"></i>
+                    <span>Breads</span>
+                </a>
+                <a href="#specials" class="category-tab">
+                    <i class="fas fa-crown"></i>
+                    <span>Chef's Special</span>
+                </a>
+                <a href="#desserts" class="category-tab">
+                    <i class="fas fa-ice-cream"></i>
+                    <span>Desserts</span>
+                </a>
+                <a href="#beverages" class="category-tab">
+                    <i class="fas fa-glass-whiskey"></i>
+                    <span>Beverages</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Menu Category: STARTERS -->
+        <section id="starters" class="menu-category-section">
+            <div class="category-header">
+                <h2 class="category-title">
+                    <i class="fas fa-utensils"></i>
+                    Appetizers & Starters
+                </h2>
+                <p class="category-description">Perfect beginnings to your culinary journey</p>
+            </div>
+
+            <div class="menu-items-grid">
+                <!-- Item 1 -->
+                <article class="menu-card">
+                    <div class="menu-card-header">
+                        <h3 class="item-name">Paneer Tikka</h3>
+                        <div class="item-tags">
+                            <span class="veg-tag">🟢 Vegetarian</span>
+                            <span class="spice-tag">🌶️ Mild</span>
+                            <span class="popular-tag"><i class="fas fa-fire"></i> Popular</span>
+                        </div>
+                    </div>
+                    <p class="item-description">Cubes of cottage cheese marinated in traditional spices, grilled in clay oven</p>
+                    <div class="menu-card-footer">
+                        <div class="item-price">₹220</div>
+                        <button class="add-to-cart-btn" data-item="Paneer Tikka" data-price="220">
+                            <i class="fas fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="menu-card highlight-card">
+                    <div class="menu-card-header">
+                        <div class="best-seller-badge">
+                            <i class="fas fa-trophy"></i> Best Seller
+                        </div>
+                        <h3 class="item-name">Chicken Tandoori</h3>
+                        <div class="item-tags">
+                            <span class="nonveg-tag">🔴 Non-Vegetarian</span>
+                            <span class="spice-tag">🌶️🌶️ Medium</span>
+                        </div>
+                    </div>
+                    <p class="item-description">Succulent chicken marinated in yogurt and spices, roasted in traditional tandoor</p>
+                    <div class="menu-card-footer">
+                        <div class="item-price">₹320</div>
+                        <button class="add-to-cart-btn" data-item="Chicken Tandoori" data-price="320">
+                            <i class="fas fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="menu-card">
+                    <div class="menu-card-header">
+                        <h3 class="item-name">Samosa Platter</h3>
+                        <div class="item-tags">
+                            <span class="veg-tag">🟢 Vegetarian</span>
+                            <span class="spice-tag">🌶️ Mild</span>
+                        </div>
+                    </div>
+                    <p class="item-description">Crispy pastry filled with spiced potatoes, peas, served with chutneys</p>
+                    <div class="menu-card-footer">
+                        <div class="item-price">₹180</div>
+                        <button class="add-to-cart-btn" data-item="Samosa Platter" data-price="180">
+                            <i class="fas fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 4 -->
+                <article class="menu-card">
+                    <div class="menu-card-header">
+                        <h3 class="item-name">Fish Amritsari</h3>
+                        <div class="item-tags">
+                            <span class="nonveg-tag">🔴 Non-Vegetarian</span>
+                            <span class="spice-tag">🌶️🌶️ Medium</span>
+                            <span class="chef-tag"><i class="fas fa-hat-chef"></i> Chef Special</span>
+                        </div>
+                    </div>
+                    <p class="item-description">Batter-fried fish chunks with carom seeds, served with mint chutney</p>
+                    <div class="menu-card-footer">
+                        <div class="item-price">₹280</div>
+                        <button class="add-to-cart-btn" data-item="Fish Amritsari" data-price="280">
+                            <i class="fas fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Menu Category: MAIN COURSE -->
+        <section id="main-course" class="menu-category-section">
+            <div class="category-header">
+                <h2 class="category-title">
+                    <i class="fas fa-fire"></i>
+                    Main Course Delights
+                </h2>
+                <p class="category-description">Signature curries and gravies that define Indian cuisine</p>
+            </div>
+
+            <div class="menu-items-grid">
+                <!-- Item 1 -->
+                <article class="menu-card">
+                    <div class="menu-card-header">
+                        <h3 class="item-name">Butter Chicken</h3>
+                        <div class="item-tags">
+                            <span class="nonveg-tag">🔴 Non-Vegetarian</span>
+                            <span class="spice-tag">🌶️ Mild</span>
+                            <span class="popular-tag"><i class="fas fa-fire"></i> Popular</span>
+                        </div>
+                    </div>
+                    <p class="item-description">Tender chicken in rich tomato and butter gravy, cream finish</p>
+                    <div class="menu-card-footer">
+                        <div class="item-price">₹340</div>
+                        <button class="add-to-cart-btn" data-item="Butter Chicken" data-price="340">
+                            <i class="fas fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="menu-card highlight-card">
+                    <div class="menu-card-header">
+                        <div class="signature-badge">
+                            <i class="fas fa-star"></i> Signature Dish
+                        </div>
+                        <h3 class="item-name">Rogan Josh</h3>
+                        <div class="item-tags">
+                            <span class="nonveg-tag">🔴 Non-Vegetarian</span>
+                            <span class="spice-tag">🌶️🌶️🌶️ Hot</span>
+                        </div>
+                    </div>
+                    <p class="item-description">Kashmiri lamb curry with aromatic spices and rich gravy</p>
+                    <div class="menu-card-footer">
+                        <div class="item-price">₹380</div>
+                        <button class="add-to-cart-btn" data-item="Rogan Josh" data-price="380">
+                            <i class="fas fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="menu-card">
+                    <div class="menu-card-header">
+                        <h3 class="item-name">Palak Paneer</h3>
+                        <div class="item-tags">
+                            <span class="veg-tag">🟢 Vegetarian</span>
+                            <span class="spice-tag">🌶️ Mild</span>
+                            <span class="healthy-tag"><i class="fas fa-heart"></i> Healthy</span>
+                        </div>
+                    </div>
+                    <p class="item-description">Cottage cheese in creamy spinach gravy with Indian spices</p>
+                    <div class="menu-card-footer">
+                        <div class="item-price">₹260</div>
+                        <button class="add-to-cart-btn" data-item="Palak Paneer" data-price="260">
+                            <i class="fas fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 4 -->
+                <article class="menu-card">
+                    <div class="menu-card-header">
+                        <h3 class="item-name">Chicken Chettinad</h3>
+                        <div class="item-tags">
+                            <span class="nonveg-tag">🔴 Non-Vegetarian</span>
+                            <span class="spice-tag">🌶️🌶️🌶️ Hot</span>
+                            <span class="regional-tag"><i class="fas fa-map-marker-alt"></i> South Indian</span>
+                        </div>
+                    </div>
+                    <p class="item-description">Spicy chicken curry from Tamil Nadu with fresh ground spices</p>
+                    <div class="menu-card-footer">
+                        <div class="item-price">₹350</div>
+                        <button class="add-to-cart-btn" data-item="Chicken Chettinad" data-price="350">
+                            <i class="fas fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Menu Category: CHEF'S SPECIAL -->
+        <section id="specials" class="menu-category-section special-section">
+            <div class="category-header">
+                <h2 class="category-title">
+                    <i class="fas fa-crown"></i>
+                    Chef's Special Creations
+                </h2>
+                <p class="category-description">Exclusive dishes crafted by our master chefs</p>
+            </div>
+
+            <div class="special-menu-grid">
+                <!-- Special Item 1 -->
+                <article class="special-card premium-card">
+                    <div class="special-badge">
+                        <i class="fas fa-gem"></i> Premium
+                    </div>
+                    <div class="special-card-content">
+                        <h3 class="special-item-name">Royal Mughlai Thali</h3>
+                        <p class="special-item-description">Complete feast with biryani, 3 curries, bread, rice, salad, raita, dessert, and drink</p>
+                        <div class="special-includes">
+                            <h4>Includes:</h4>
+                            <ul class="includes-list">
+                                <li>Chicken Biryani or Veg Biryani</li>
+                                <li>Butter Chicken or Paneer Butter Masala</li>
+                                <li>Dal Makhani or Dal Tadka</li>
+                                <li>2 Naan or 4 Roti</li>
+                                <li>Raita, Salad, Pickle</li>
+                                <li>Gulab Jamun or Ice Cream</li>
+                                <li>Soft Drink or Lassi</li>
+                            </ul>
+                        </div>
+                        <div class="special-card-footer">
+                            <div class="special-price">
+                                <span class="original-price">₹599</span>
+                                <span class="discounted-price">₹499</span>
+                                <span class="discount-badge">17% OFF</span>
+                            </div>
+                            <button class="special-order-btn" data-item="Royal Mughlai Thali" data-price="499">
+                                <i class="fas fa-crown"></i> Order Special
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Special Item 2 -->
+                <article class="special-card">
+                    <div class="special-badge">
+                        <i class="fas fa-bolt"></i> Limited Time
+                    </div>
+                    <div class="special-card-content">
+                        <h3 class="special-item-name">Tandoori Mixed Grill</h3>
+                        <p class="special-item-description">Assorted grill platter with chicken, fish, prawns, and paneer</p>
+                        <div class="special-includes">
+                            <h4>Serves: 2-3 People</h4>
+                            <ul class="includes-list">
+                                <li>Tandoori Chicken (4 pieces)</li>
+                                <li>Fish Tikka (4 pieces)</li>
+                                <li>Prawns Tandoori (6 pieces)</li>
+                                <li>Paneer Tikka (6 pieces)</li>
+                                <li>Grilled Vegetables</li>
+                                <li>3 Chutneys & Salad</li>
+                            </ul>
+                        </div>
+                        <div class="special-card-footer">
+                            <div class="special-price">₹850</div>
+                            <button class="special-order-btn" data-item="Tandoori Mixed Grill" data-price="850">
+                                <i class="fas fa-fire"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Menu Category: DESSERTS -->
+        <section id="desserts" class="menu-category-section">
+            <div class="category-header">
+                <h2 class="category-title">
+                    <i class="fas fa-ice-cream"></i>
+                    Sweet Endings
+                </h2>
+                <p class="category-description">Traditional Indian sweets to complete your meal</p>
+            </div>
+
+            <div class="menu-items-grid">
+                <!-- Dessert 1 -->
+                <article class="menu-card">
+                    <div class="menu-card-header">
+                        <h3 class="item-name">Gulab Jamun</h3>
+                        <div class="item-tags">
+                            <span class="veg-tag">🟢 Vegetarian</span>
+                            <span class="sweet-tag">🍯 Sweet</span>
+                        </div>
+                    </div>
+                    <p class="item-description">Soft milk dumplings soaked in rose-flavored sugar syrup</p>
+                    <div class="menu-card-footer">
+                        <div class="item-price">₹120 (2 pieces)</div>
+                        <button class="add-to-cart-btn" data-item="Gulab Jamun" data-price="120">
+                            <i class="fas fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Dessert 2 -->
+                <article class="menu-card">
+                    <div class="menu-card-header">
+                        <h3 class="item-name">Mango Kulfi</h3>
+                        <div class="item-tags">
+                            <span class="veg-tag">🟢 Vegetarian</span>
+                            <span class="seasonal-tag"><i class="fas fa-sun"></i> Seasonal</span>
+                        </div>
+                    </div>
+                    <p class="item-description">Traditional Indian ice cream with real mango pulp and nuts</p>
+                    <div class="menu-card-footer">
+                        <div class="item-price">₹150</div>
+                        <button class="add-to-cart-btn" data-item="Mango Kulfi" data-price="150">
+                            <i class="fas fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Dietary Information -->
+        <section class="dietary-info">
+            <h3><i class="fas fa-info-circle"></i> Dietary Information</h3>
+            <div class="dietary-legend">
+                <div class="legend-item">
+                    <span class="veg-indicator">🟢</span>
+                    <span>Vegetarian</span>
+                </div>
+                <div class="legend-item">
+                    <span class="nonveg-indicator">🔴</span>
+                    <span>Non-Vegetarian</span>
+                </div>
+                <div class="legend-item">
+                    <span class="spice-indicator">🌶️</span>
+                    <span>Spice Level Indicator</span>
+                </div>
+                <div class="legend-item">
+                    <span class="gluten-free"><i class="fas fa-seedling"></i></span>
+                    <span>Gluten Free Options Available</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Floating Cart Summary -->
+        <div class="cart-summary">
+            <div class="cart-summary-content">
+                <h4><i class="fas fa-shopping-cart"></i> Your Order</h4>
+                <div class="cart-items-list" id="cartItems">
+                    <p class="empty-cart">No items added yet</p>
+                </div>
+                <div class="cart-total">
+                    <strong>Total: ₹<span id="cartTotal">0</span></strong>
+                </div>
+                <button class="checkout-btn">
+                    <i class="fas fa-credit-card"></i> Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Restaurant Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Restaurant Information -->
+            <section class="restaurant-info">
+                <h2>TASTE OF INDIA</h2>
+                <p>Authentic Indian cuisine in the heart of the city</p>
+                <address>
+                    123 Main Street<br>
+                    Cityville, ST 12345<br>
+                    <a href="tel:+15551234567">(555) 123-4567</a><br>
+                    <a href="mailto:info@tasteofindia.com">info@tasteofindia.com</a>
+                </address>
+            </section>
+
+            <!-- Operating Hours -->
+            <section class="hours">
+                <h3>Operating Hours</h3>
+                <ul>
+                    <li>Monday - Thursday: 11:00 AM - 10:00 PM</li>
+                    <li>Friday - Saturday: 11:00 AM - 11:00 PM</li>
+                    <li>Sunday: 12:00 PM - 9:00 PM</li>
+                </ul>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="quick-links">
+                <h3>Quick Links</h3>
+                <nav>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="gift-cards.html">Gift Cards</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="newsletter">
+                <h3>Join Our Newsletter</h3>
+                <p>Receive updates on specials and events</p>
+                <form id="newsletter-form">
+                    <label for="email" class="visually-hidden">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+
+            <!-- Social Media Links -->
+            <section class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tripadvisor.com" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </section>
+
+            <!-- Legal & Copyright -->
+            <section class="legal">
+                <hr>
+                <p>&copy; 2023 KWANG GROUP. ALL RIGHTS RESERVED.</p>
+                <nav>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </footer>
+
